@@ -9,17 +9,20 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Fraudes" />
         <module name="Eureka" />
+        <module name="Gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Eureka" target="17" />
       <module name="Fraudes" target="17" />
+      <module name="Gateway" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Eureka" options="-parameters" />
       <module name="Fraudes" options="-parameters" />
+      <module name="Gateway" options="-parameters" />
     </option>
   </component>
 </project>

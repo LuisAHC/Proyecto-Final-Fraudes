@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/Fraudes/pom.xml" />
         <option value="$PROJECT_DIR$/Eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/Gateway/pom.xml" />
       </list>
     </option>
   </component>

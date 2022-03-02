@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: api-fraudes
+          uri: lb://api-fraudes
+          predicates:
+            - Path=/fraudes/**
+          filters:
+            - StripPrefix=1
