@@ -1,0 +1,24 @@
+resilience4j:
+  circuitbreaker:
+    configs:
+      defecto:
+        sliding-window-size: 10
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 5s
+        permitted-number-of-calls-in-half-open-state: 8
+        slow-call-rate-threshold: 50
+        slow-call-duration-threshold: 2s
+    instances:
+      info:
+        base-config: defecto
+      ban:
+        base-config: defecto
+  timelimiter:
+    configs:
+      defecto:
+        timeout-duration: 2s
+      instances:
+        info:
+          base-config: defecto
+        ban:
+          base-config: defecto
