@@ -45,10 +45,16 @@ public class ListaNegraController {
         return CompletableFuture.supplyAsync((() -> new ResponseEntity<>("IP agregada a la lista negra correctamente", HttpStatus.OK)));
     }
 
+    /**
+     * Metodo alternativo para controlar problemas en banearIP()
+     * @param e La excepción que causo el problema
+     * @return Retorna una respuesta al error
+     * @author LAHC 01-03-2022
+     */
     public CompletableFuture<ResponseEntity<?>> metodoAlternativo(Throwable e) {
         Map<String, Object> respuesta = new HashMap<>();
         logger.info("mensaje: " + e.getMessage() + " causa: " + e.getCause());
         respuesta.put("mensaje", e.getMessage());
-        return CompletableFuture.supplyAsync(() -> new ResponseEntity<>("No se pudo banear la IP, intentalo de nuevo", HttpStatus.BAD_REQUEST));
+        return CompletableFuture.supplyAsync(() -> new ResponseEntity<>("No se pudo banear la IP, intentalo de nuevo\n" + respuesta, HttpStatus.BAD_REQUEST));
     }
 }
