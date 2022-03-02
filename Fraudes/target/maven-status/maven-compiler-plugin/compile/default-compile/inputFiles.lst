@@ -1,0 +1,16 @@
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\modelo\entidades\Pais.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\modelo\repositorios\ListaNegraRepository.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\modelo\entidades\ListaNegra.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\modelo\servicios\IpService.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\modelo\servicios\ListaNegraServiceImpl.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\modelo\dto\PaisDTO.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\controladores\AppController.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\controladores\ListaNegraController.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\modelo\servicios\ListaNegraService.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\FraudesApplication.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\clientes\RestCountriesRest.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\modelo\mapper\PaisMapper.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\modelo\servicios\IpServiceFeign.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\clientes\FixerRest.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\clientes\Ip2CountryRest.java
+D:\Luis\Documents\IBM\Spring\proyectos\Proyecto Final Fraudes\Fraudes\src\main\java\com\ibm\academia\fraudes\clientes\CurrencyConverterRest.java

@@ -1,0 +1,16 @@
+com\ibm\academia\fraudes\clientes\CurrencyConverterRest.class
+com\ibm\academia\fraudes\modelo\servicios\IpServiceFeign.class
+com\ibm\academia\fraudes\clientes\FixerRest.class
+com\ibm\academia\fraudes\FraudesApplication.class
+com\ibm\academia\fraudes\modelo\servicios\ListaNegraServiceImpl.class
+com\ibm\academia\fraudes\modelo\mapper\PaisMapper.class
+com\ibm\academia\fraudes\controladores\AppController.class
+com\ibm\academia\fraudes\clientes\RestCountriesRest.class
+com\ibm\academia\fraudes\modelo\dto\PaisDTO.class
+com\ibm\academia\fraudes\modelo\servicios\IpService.class
+com\ibm\academia\fraudes\modelo\servicios\ListaNegraService.class
+com\ibm\academia\fraudes\modelo\entidades\Pais.class
+com\ibm\academia\fraudes\clientes\Ip2CountryRest.class
+com\ibm\academia\fraudes\modelo\entidades\ListaNegra.class
+com\ibm\academia\fraudes\controladores\ListaNegraController.class
+com\ibm\academia\fraudes\modelo\repositorios\ListaNegraRepository.class
