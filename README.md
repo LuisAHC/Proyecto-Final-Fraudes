@@ -1,7 +1,7 @@
 # Proyecto-Final-Fraudes
 _Este proyecto se encuentra dockerizado._
 
-_Para ver como ejecutar los contenedores docker refierase a la sección [Docker](https://github.com/LuisAHC/Proyecto-Final-Fraudes/edit/master/README.md#docker) de este README_
+_Para ver como ejecutar los contenedores docker refierase a la sección [Docker](#docker) de este README_
 ## Proyecto final para la academia de microservicios de IBM
 Esta es una API que permite:
 1. Dada una dirección IP, encontrar el país al que pertenece y mostrar:
