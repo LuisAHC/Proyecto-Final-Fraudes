@@ -1,4 +1,7 @@
 # Proyecto-Final-Fraudes
+_Este proyecto se encuentra dockerizado._
+
+_Para ver como ejecutar los contenedores docker refierase a la sección [Docker](https://github.com/LuisAHC/Proyecto-Final-Fraudes/edit/master/README.md#docker) de este README_
 ## Proyecto final para la academia de microservicios de IBM
 Esta es una API que permite:
 1. Dada una dirección IP, encontrar el país al que pertenece y mostrar:
@@ -87,3 +90,35 @@ La imagen 5 muestra una petición para añadir una IP a la lista negra no exitos
 <p align="center">
    Imagen 5
 </p>
+
+## Docker
+_Es necesario tener Docker instalado en la computadora en la que se quiera desplegar el proyecto_ [Obtener Docker](https://www.docker.com/get-started)
+
+Para comenzar se debe crear una red a la que estarán asociados todos los contendores, para crearla utilice el siguiente comando en una terminal.
+`docker network create springcloud`
+Una vez creada la red podemos crear los contenedores.
+
+### Construir y desplegar contenedores
+Abrir una terminal dentro de la carpeta Eureka y ejecutar los siguientes comandos:
+   ```
+   docker build -t eureka:v1 .
+   docker run -p 8761:8761 --name eureka --network springcloud eureka:v1
+   ```
+Abrir una terminal dentro de la carpeta Fraudes y ejecutar los siguientes comandos:
+   ```
+   docker build -t fraudes:v1 .
+   docker run -P --name fraudes --network springcloud fraudes:v1
+   ```
+Abrir una terminal dentro de la carpeta Gateway y ejecutar los siguientes comandos:
+   ```
+   docker build -t gateway:v1 .
+   docker run -p 8090:8090 --name gateway --network springcloud gateway:v1
+   ```  
+Después de ejecutar los comandos anteriores nuestra lista de contenedores se verá de la siguiente manera en Docket Desktop.
+
+![Docker Desktop](https://user-images.githubusercontent.com/25095612/156476062-6c8d967f-178e-4a62-a2ac-504ebf5884f3.png)
+<p align="center">
+   Imagen 6
+</p>
+
+Y listo, ahora se puede acceder a cualquiera de los endpoints del proyecto.
