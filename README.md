@@ -10,8 +10,8 @@ Esta es una API que permite:
 2. Marcar la IP en una lista negra no permitiéndole consultar la información del punto 1
 
 Para cumplir con los requisitos anteriores se hizo uso de las siguientes APIs:
-- [Currency Converter API](https://free.currencyconverterapi.com/)
-- [Fixer](https://fixer.io/) (En caso de que Currency Converter API no se encuentre disponible)
+- [Fixer](https://fixer.io/) 
+- [Currency Converter API](https://free.currencyconverterapi.com/) (En caso de que Fixer no se encuentre disponible)
 - [IP2Country](https://ip2country.info/)
 - [REST Countries](https://restcountries.com/)
 
