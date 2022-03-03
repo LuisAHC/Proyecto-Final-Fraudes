@@ -37,8 +37,55 @@ A continuación, se demuestra el funcionamiento del proyecto
 
 **Endpoint**: _http://localhost:8090/fraudes/api-fraudes/cliente/buscar_info/{ip}/_
 
-La imagen 1 muestra una consulta exitosa
+La imagen 1 muestra una consulta exitosa.
 
 
 ![imagen 1](https://user-images.githubusercontent.com/25095612/156471229-9f58ac54-d90a-4de2-909a-abe5ee6b186d.png)
-_Imagen 1_
+<p align="center">
+   Imagen 1
+</p>
+
+------------------------------------------------------------
+
+La imagen 2 muestra una consulta a una IP que se encuentra en lista negra.
+
+
+![imagen 2](https://user-images.githubusercontent.com/25095612/156472837-0098060a-1a6a-4109-9185-ca4bd49a7bd7.png)
+<p align="center">
+   Imagen 2
+</p>
+
+------------------------------------------------------------
+
+La imagen 3 muestra la toleracia a fallos del endpoint.
+
+
+![imagen 3](https://user-images.githubusercontent.com/25095612/156473261-c4cd2825-1c8a-41eb-95be-4c1732b998f2.png)
+<p align="center">
+   Imagen 3
+</p>
+
+------------------------------------------------------------
+
+### Lista negra de IPs.
+**Endpoint**: _http://localhost:8090/fraudes/api-fraudes/admin/banear/{ip}/_
+
+La imagen 4 muestra una petición para añadir una IP a la lista negra exitosa.
+
+
+![imagen 4](https://user-images.githubusercontent.com/25095612/156473579-68d0a418-f220-4117-96c0-30e26e6a4d71.png)
+<p align="center">
+   Imagen 4
+</p>
+
+------------------------------------------------------------
+
+La imagen 5 muestra una petición para añadir una IP a la lista negra no exitosa.
+
+
+![imagen 5](https://user-images.githubusercontent.com/25095612/156473673-11c6fc01-32f1-4be9-a1ad-a765e90cb4d4.png)
+<p align="center">
+   Imagen 5
+</p>
+
+------------------------------------------------------------
