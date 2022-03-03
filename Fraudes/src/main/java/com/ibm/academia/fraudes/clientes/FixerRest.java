@@ -7,6 +7,6 @@ import java.util.Map;
 
 @FeignClient(name = "api-fixer", url = "http://data.fixer.io/api")
 public interface FixerRest {
-    @GetMapping("/latest?access_key=50213c59d76beb36468ba6a574ea54bf")
+    @GetMapping("/latest?access_key=424dbcc19c5509fe4006ccb6610b5209")
     Map<String, Object> obtenerConversiones() throws RuntimeException;
 }

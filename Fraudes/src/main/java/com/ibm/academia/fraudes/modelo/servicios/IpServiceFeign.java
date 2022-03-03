@@ -45,20 +45,20 @@ public class IpServiceFeign implements IpService{
                         paisFinal.setMonedas(paisMonedas.getMonedas());
                         try {
                             List<String> valores = new ArrayList<>();
+                            Map<String, Object> rates = (Map<String, Object>) fixerRest.obtenerConversiones().get("rates");
                             for (Map<String, Object> moneda: paisMonedas.getMonedas()) {
-                                valores.add(currencyConverterFeign.obtenerConversiones(moneda.get("code").toString()));
+                                if (rates.containsKey(moneda.get("code"))){
+                                    valores.add("USD_"+moneda.get("code").toString() + ": " + rates.get(moneda.get("code")).toString());
+                                }
                             }
                             paisFinal.setCotizacionActual(valores);
                             return PaisMapper.mapPais(paisFinal);
                         }catch (FeignException fe){
-                            System.out.println("CurrencyConverter no disponible, utilizando Fixer");
+                            System.out.println("Fixer no disponible, utilizando Currency Converter");
                             try {
                                 List<String> valores = new ArrayList<>();
-                                Map<String, Object> rates = (Map<String, Object>) fixerRest.obtenerConversiones().get("rates");
                                 for (Map<String, Object> moneda: paisMonedas.getMonedas()) {
-                                    if (rates.containsKey(moneda.get("code"))){
-                                        valores.add("USD_"+moneda.get("code").toString() + ": " + rates.get(moneda.get("code")).toString());
-                                    }
+                                    valores.add(currencyConverterFeign.obtenerConversiones(moneda.get("code").toString()));
                                 }
                                 paisFinal.setCotizacionActual(valores);
                                 return PaisMapper.mapPais(paisFinal);
