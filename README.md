@@ -87,5 +87,3 @@ La imagen 5 muestra una petición para añadir una IP a la lista negra no exitos
 <p align="center">
    Imagen 5
 </p>
-
-------------------------------------------------------------
