@@ -42,8 +42,7 @@ A continuación, se demuestra el funcionamiento del proyecto
 
 La imagen 1 muestra una consulta exitosa.
 
-
-![imagen 1](https://user-images.githubusercontent.com/25095612/156471229-9f58ac54-d90a-4de2-909a-abe5ee6b186d.png)
+![imagen 1](https://user-images.githubusercontent.com/25095612/156478285-3d3ac3f0-3c78-48c7-8170-4e867bab01cf.png)
 <p align="center">
    Imagen 1
 </p>
