@@ -43,5 +43,8 @@ class ListaNegraServiceImplTest {
 
         // When
         listaNegraService.banearPorIp(ip);
+
+        // Then
+        verify(listaNegraService).banearPorIp(ip);
     }
 }

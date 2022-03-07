@@ -23,6 +23,7 @@ public class Pais implements Serializable {
     @JsonProperty("currencies")
     private List<Map<String, Object>> monedas;
 
+    @JsonProperty("rates")
     private List<String> cotizacionActual;
 
 
